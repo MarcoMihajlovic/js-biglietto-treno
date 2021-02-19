@@ -1,7 +1,22 @@
-var km = prompt("Quanti chilometri devi percorrere ?");
-var eta = prompt("Quanti anni hai ?");
+var affermazione= true;
+    
+while(affermazione) {
 
-var prezzo = (parseInt(km) * 21)/ 100;
+    var km = prompt("Quanti chilometri devi percorrere ?");
+    var eta = prompt("Quanti anni hai ?");
+    var num1 = parseInt(km);
+    var num2 = parseInt(eta);
+
+    if (isNaN(num1)) {
+        alert("Per favore, inserisci i chilometri come valore numerico");
+    } else if(isNaN(num2)){
+        alert("Per favore, inserisci l'eta' come valore numerico")
+    } else {
+        affermazione = false;
+    }
+}
+
+var prezzo = (num1 * 21)/ 100;
 
 if (eta < 18){
     prezzo = prezzo * 0.8;
