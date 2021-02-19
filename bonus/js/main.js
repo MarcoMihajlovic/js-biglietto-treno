@@ -17,7 +17,6 @@ while (partita) {
 
     var mossaAvversario = Math.random()*3;
     mossaAvversario = parseInt(mossaAvversario);
-    alert(mossaAvversario);
 
     switch (mossaAvversario) {
         case 0:
